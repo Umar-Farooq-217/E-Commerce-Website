@@ -1,7 +1,9 @@
 import Image from "next/image";
-
+import Navbar from '../app/components/navbar/Navbar'
 export default function Home() {
   return (
-   <div className=""></div>
+   <div className="bg-[rgba(0,0,0,0.8)]">
+    <Navbar/>
+   </div>
   );
 }
