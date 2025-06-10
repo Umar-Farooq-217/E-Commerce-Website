@@ -25,11 +25,12 @@ export default function Navbar() {
           }
       
       </div>
-        <div className="block lg:flex justify-center items-center list-none text-md gap-12 font-[600] my-9 lg:my-0   ">
-            <li className='py-10 lg:py-0 flex justify-center items-center  '><Link className=''  href="/" >Marketplace </Link></li>
-            <li className='py-10 lg:py-0 flex justify-center items-center  '><Link  href="/" >Rankings </Link></li>
-            <li className='py-10 lg:py-0 flex justify-center items-center  '><Link  href="/" >Connect a Wallet </Link></li>
-            <li className='py-10 lg:py-0 flex justify-center items-center  '><Link  href="/" ><Button title='Sign Up'/> </Link></li>
+        <div className={`block lg:flex justify-center items-center list-none text-md gap-12 font-[600] my-9 lg:my-0 bg-[rgba(0,0,0)]  
+          absolute lg:static  transition-all ease-in duration-500 z-[-1] lg:z-10  ${open ? 'top-[20px]': 'top-[-600px]' }  `}>
+            <li className='py-10 lg:py-0    '><Link className=''  href="/" >Marketplace </Link></li>
+            <li className='py-10 lg:py-0 '><Link  href="/" >Rankings </Link></li>
+            <li className='py-10 lg:py-0   '><Link  href="/" >Connect a Wallet </Link></li>
+            <li className='py-10 lg:py-0   '><Link  href="/" ><Button title='Sign Up'/> </Link></li>
            
         </div>
       
